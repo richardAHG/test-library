@@ -1,0 +1,23 @@
+{
+  "name": "@richard_hg/test-library",
+  "version": "1.0.0",
+  "description": "generador de librerias",
+  "main": "dist/index.js",
+  "types":"dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist && tsc",
+    "prepublish": "npm run build"
+  },
+  "author": "Richard Huamán Gómez <richard21hg92@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@nestjs/common": "^9.2.1",
+    "@nestjs/mapped-types": "*",
+    "@types/node": "^18.11.14",
+    "reflect-metadata": "^0.1.13",
+    "rimraf": "^3.0.2",
+    "rxjs": "^7.6.0",
+    "typescript": "^4.9.4"
+  }
+}
